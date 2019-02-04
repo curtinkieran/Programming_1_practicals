@@ -1,0 +1,70 @@
+in p12p1, the program is able to calculate the factorial of 7000.
+in p13p6, "maximum recursion depth has been exceeded".
+
+I imported sys to set recursion limit.
+then I imported "time" and was able to record the duration of each function.
+I wrapped this as tightly as I could, before and after the function is called.
+
+fact 1000 (non-recursive) = .001 seconds
+fact 1000 (recursive)= .002 seconds
+
+fact 5000 (non-recursive) = .03 seconds
+fact 5000 (recursive) = .04 seconds
+
+fact 7000 (non-recursive) = .071 seconds
+fact 7000 (recursive) = .076 seconds
+
+------------recursive-----------
+import sys
+sys.setrecursionlimit(100000)
+
+def fact(x):
+    if x == 0:
+        return 1
+    else:
+        currentfact = (x*(fact(x-1)))
+        return currentfact
+        
+import time  
+
+number= int(input('Enter a non-negtive number: '))
+
+if number >= 0:
+    t0=time.time()
+    print(fact(number))
+    t1=time.time()
+    print('Completed')
+else:
+    print('You entered a negative number.')
+
+
+
+total = t1-t0
+
+print(total)
+
+---------------non-recursive------------
+import time
+
+def fact(x):
+    answer=1
+    for i in range(1, x+1):
+        answer*=i
+    return answer
+
+number = int(input('Enter a number: '))
+
+if number >= 0:
+    t0=time.time()
+    print('Factorial of ', number, 'is', fact(number))
+    t1=time.time()
+else:
+    print('An appropriate error message')
+
+
+total = t1-t0
+
+print(total)
+
+
+

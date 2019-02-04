@@ -1,0 +1,9 @@
+1) the non-recursive function is able to handle very high numbers.
+2) the recursive function is not able to calculate ! 10000 :
+    
+    Backend terminated (returncode: 3221225725)
+    Windows fatal exception: stack overflow
+
+    Current thread 0x0000db68 (most recent call first):
+        
+        the operating system only allocates a certain amount of memory to each python process, this limit has been reached.

@@ -1,0 +1,5 @@
+6.1 - Prompt user for input (ints) do this twice.  Add numbers together.  If > 100, then print
+6.2 - Prompt user for 3 numbers. Check if any of them are odd.  If not, print "".  If odd number found, this number is to be assigned highest number.  Check if num2 and num 3 are odd, and also higher than previous hghest number.  Print highest number.
+6.3 - Prompt user for name.  If name == myname, print "".  If name == SBS or MM print "", else print ""
+6.4 - Store password.  Prompt user for password.  If passwd != correct >3 times print "denied". else print "access".
+6.5 - Store password.  Prompt user for password.  If == password, print "access". If != password print "wrong".  Prompt for password 3 times. If correct 3 times, print "access" else, print "denied".

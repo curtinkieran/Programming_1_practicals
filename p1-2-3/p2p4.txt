@@ -1,0 +1,5 @@
+animal = 'elephant'
+letter = animal[0]
+print (letter)
+
+So it turns out that [0] prints the first letter.

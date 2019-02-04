@@ -1,0 +1,5 @@
+A) When x and y are the same, segmet printed is black.
+B) When x is greater than y, segment printed is blank.
+C) When x is omitted, segment printed will start from the start of the string.
+D) When y is omitted, segment printed will go until the end of the string.
+E) When x and y are both omitted, the entire segment will be printed.

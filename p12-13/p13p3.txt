@@ -1,0 +1,11 @@
+(a) If you print(print_max()) you will get:
+    The largest of 5 and 6 is 6
+    None.
+    This is because the print_max function is first of all, completes itself (within the print function).
+    Although this involves printing, it does not actually return any value.
+    Therefore, by the time the print_max function is completed, there is nothing within the brackets.
+(b) Nothing happens.  You are not providing an argument for the function.
+(c) If you type print(print_max), you are asking for the address that the "print_max" is stored at.  We do not supply
+    any argument to the function, so we are printing where the print_max function has been loaded to in memory.
+    It will be a different address every time it is loaded, because it is likely that another program/process has
+    taken up the previous space once the python process has been terminated.
